@@ -518,17 +518,17 @@ google.charts.setOnLoadCallback(drawChart2);
 			}
 		}
 			if(rTick >0){
-			aRHours = parseFloat(regHour1/rTick).toFixed(4);
-			aRHours = parseInt(aRHours);
+			aRHours = (regHour1/rTick).toFixed(4);
+			aRHours = parseFloat(aRHours);
 			}
 			if(wTick >0){
-			aWHours = parseFloat(wkndHour1/wTick).toFixed(4);
+			aWHours = (wkndHour1/wTick).toFixed(4);
 			}
 			if(pTick >0){
-			aPHours = parseFloat(projectHour1/pTick).toFixed(4);
+			aPHours = (projectHour1/pTick).toFixed(4);
 			}
 			if(oTick >0){
-			aOHours = parseFloat(otherHour1/oTick).toFixed(4);
+			aOHours = (otherHour1/oTick).toFixed(4);
 			}
 			
 		var data = google.visualization.arrayToDataTable([
